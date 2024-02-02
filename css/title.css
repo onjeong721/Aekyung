@@ -1,0 +1,21 @@
+#title {
+
+}
+#title .wrap {
+  background-image: url(../img/title1.png);
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+}
+#title .wrap .title-text {
+  
+}
+#title .wrap .title-text:not(:first-child){
+  display: none;
+}
+#title .wrap .title-text h3 {
+  
+}
+#title .wrap .title-text p {
+  
+}

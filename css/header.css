@@ -1,0 +1,59 @@
+header {
+  
+}
+header .wrap {
+  
+  width: calc(100% - 50px);
+  height: 70px;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+}
+header .wrap h1 {
+  
+}
+header .wrap h1 a {
+  font-size: 0;
+  width: 135px;
+  height: 22px;
+  background-image: url(../img/logo.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+header .wrap h1 a::after{
+  content: "";
+  display: block;
+  width: 135px;
+  height: 22px;
+  background-image: url(../img/logo.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+header .wrap ul.menu {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+}
+header .wrap ul.menu li {
+  
+}
+header .wrap ul.menu li a {
+  
+}
+header .wrap .side{
+  display: flex;
+}
+header .wrap .side a{
+
+}
+header .wrap .side span.lang {
+  
+}
+header .wrap .side span.lang a {
+  
+}
+header .wrap .side select{
+
+}
+header .wrap .side select option{
+  
+}

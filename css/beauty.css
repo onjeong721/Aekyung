@@ -1,0 +1,64 @@
+section#beauty {
+  
+}
+section#beauty .wrap {
+  width: 100%;
+  position: relative;
+}
+section#beauty .wrap::after{
+  content: "";
+  display: block;
+  border-top: 1px solid #ccc;
+  position: absolute;
+  width: 95%;
+  left: 50px;
+}
+section#beauty .wrap .intro{
+  gap: 25px;
+}
+section#beauty .wrap .intro h3 {
+  
+}
+section#beauty .wrap .intro p {
+ 
+}
+section#beauty .wrap .intro span {
+
+}
+section#beauty .wrap .intro a {
+  margin-top: 100px;
+}
+section#beauty .wrap ul {
+  grid-column: 2;
+  grid-row: 1 / span 5;
+  gap: 20px;
+  width: 100%;
+}
+section#beauty .wrap ul li {
+  height: 100%;
+  width: 100%;
+}
+section#beauty .wrap ul li a {
+  font-size: 0;
+}
+section#beauty .wrap ul li a::after{
+  width: 312px;
+  height: 397px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  content: "";
+  display: block;
+}
+section#beauty .wrap ul li:nth-child(1) a::after{ 
+  background-image: url(../img/beauty1.jpg);
+}
+section#beauty .wrap ul li:nth-child(2) a::after{
+  background-image: url(../img/beauty2.jpg);
+}
+section#beauty .wrap ul li:nth-child(3) a::after{
+  background-image: url(../img/beauty3.jpg);
+}
+section#beauty .wrap ul li:nth-child(4) a::after{
+  background-image: url(../img/beauty4.jpg);
+}

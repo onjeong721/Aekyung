@@ -1,0 +1,59 @@
+section#peasonal {
+  
+}
+section#peasonal .wrap {
+  width: 100%;
+}
+section#peasonal .wrap .intro{
+  gap: 25px;
+}
+section#peasonal .wrap .intro h3 {
+  
+}
+section#peasonal .wrap .intro p {
+ 
+}
+section#peasonal .wrap .intro span {
+
+  line-height: 1.4;
+}
+section#peasonal .wrap .intro a {
+  margin-top: 100px;
+}
+section#peasonal .wrap ul {
+  grid-column: 2;
+  grid-row: 1 / span 5;
+  gap: 20px;
+  width: 100%;
+}
+section#peasonal .wrap ul li {
+  height: 100%;
+  width: 100%;
+}
+section#peasonal .wrap ul li a {
+  font-size: 0;
+}
+section#peasonal .wrap ul li a::after{
+  width: 312px;
+  height: 397px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  content: "";
+  display: block;
+}
+section#peasonal .wrap ul li:nth-child(1) a::after{ 
+  background-image: url(../img/peasonal1.jpg);
+}
+section#peasonal .wrap ul li:nth-child(2) a::after{
+  background-image: url(../img/peasonal2.jpg);
+}
+section#peasonal .wrap ul li:nth-child(3) a::after{
+  background-image: url(../img/peasonal3.jpg);
+}
+section#peasonal .wrap ul li:nth-child(4) a::after{
+  background-image: url(../img/peasonal4.jpg);
+}
+section#peasonal .wrap ul li:nth-child(5) a::after{
+  background-image: url(../img/peasonal5.jpg);
+}

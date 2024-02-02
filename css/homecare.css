@@ -1,0 +1,58 @@
+section#homecare {
+  
+}
+section#homecare .intro {
+  gap: 25px;
+}
+section#homecare .intro .intro{
+  gap: 25px;
+}
+section#homecare .intro .intro h3 {
+  
+}
+section#homecare .intro .intro p {
+ 
+}
+section#homecare .intro .intro span {
+
+}
+section#homecare .intro .intro a {
+  margin-top: 100px;
+}
+section#homecare .wrap ul {
+  grid-column: 2;
+  grid-row: 1 / span 5;
+  gap: 20px;
+  width: 100%;
+}
+section#homecare .wrap ul li {
+  height: 100%;
+  width: 100%;
+}
+section#homecare .wrap ul li a {
+  font-size: 0;
+}
+section#homecare .wrap ul li a::after{
+  width: 312px;
+  height: 397px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  content: "";
+  display: block;
+}
+section#homecare .wrap ul li:nth-child(1) a::after{ 
+  background-image: url(../img/home1.png);
+}
+section#homecare .wrap ul li:nth-child(2) a::after{
+  background-image: url(../img/home2.png);
+}
+section#homecare .wrap ul li:nth-child(3) a::after{
+  background-image: url(../img/home3.jpg);
+}
+section#homecare .wrap ul li:nth-child(4) a::after{
+  background-image: url(../img/home4.png);
+}
+section#homecare .wrap ul li:nth-child(5) a::after{
+  background-image: url(../img/home5.jpg);
+}

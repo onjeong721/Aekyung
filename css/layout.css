@@ -1,0 +1,15 @@
+/* 그리드 */
+.grid3_4{
+   display: grid;
+   grid-template-columns: auto 1fr auto;
+   grid-template-rows: auto auto auto 1fr;
+}
+.gridc2{
+   display: grid;
+   grid-template-columns: 1fr 1.5fr;
+}
+.grid2_5{
+   display: grid !important;
+   grid-template-columns: 1fr 1fr;
+   grid-template-rows: auto auto 1fr auto;
+}

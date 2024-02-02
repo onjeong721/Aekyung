@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>애경</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/common.css">
+
+    <!-- //구글폰트 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=IBM+Plex+Sans+KR:wght@300&display=swap" rel="stylesheet">
+    <!-- 구글폰트// -->
+    <!-- 프리텐다드 -->
+    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+    <!--  -->
+    <!-- https://ionic.io/ionicons/v1 -->
+    <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/1.5.2/css/ionicons.min.css">
+    <!--  -->
+    <link rel="stylesheet" href="css/font.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/repeat.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/title.css">
+    <link rel="stylesheet" href="css/aside.css">
+    <link rel="stylesheet" href="css/sunstainable.css">
+    <link rel="stylesheet" href="css/beauty.css">
+    <link rel="stylesheet" href="css/peasonal.css">
+    <link rel="stylesheet" href="css/homecare.css">
+    <link rel="stylesheet" href="css/news.css">
+    <link rel="stylesheet" href="css/response.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <!-- 제이쿼리 -->
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+          
+            });
+    </script> 
+    <!-- 슬릭 -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script type="text/javascript">
+        // 뉴스
+        $(document).ready(function(){
+            $('section#news .wrap .art_cantainer').slick({
+                dots: true,
+                infinite: true,
+                speed: 500,
+                fade: true,
+                cssEase: 'linear',
+                arrow: true
+            });
+        });
+    </script>
+</head>
+<body>
+    <!-- 상단영역 -->
+    <header>
+        <div class="wrap flex align-center">
+            <h1>
+                <a href="">AEKYUNG</a>
+            </h1>
+            <ul class="menu">
+                <li><a href="">회사소개</a></li>
+                <li><a href="">브랜드</a></li>
+                <li><a href="">미디어</a></li>
+                <li><a href="">지속가능경영</a></li>
+                <li><a href="">투자정보</a></li>
+                <li><a href="">고객만족팀</a></li>
+            </ul>
+            <div class="side">
+                <a href="">더보기</a>
+                <span class="lang">
+                    <a href="">KOR</a>
+                    <a href="">ENG</a>
+                </span>
+                <select name="" id="">
+                    <option value="">계열사사이트</option>
+                    <option value="">HB1</option>
+                    <option value="">HB2</option>
+                    <option value="">HB3</option>
+                </select>
+            </div>
+        </div>
+    </header>
+    <!-- 타이틀영역 -->
+    <div id="title" class="vh100">
+        <div class="wrap">
+            <div class="title-text text1 flex hide">
+                <h3 class="h6 upper">Love & Respect</h3>
+                <p class="h1">당신의 삶에 더 가까이 그리고 당신보다 먼저 당신이 되어봅니다.</p>
+            </div>
+            <div class="title-text text2 flex hide">
+                <h3 class="h6 upper">Charging aekyung</h3>
+                <p class="h1">우리의 변화는 조직의 성과와 기업의 지속가능성을 향상시키기 위한 끊임없는 노력입니다.</p>
+            </div>
+            <div class="title-text text3 flex hide">
+                <h3 class="h6 upper">Realizing Global</h3>
+                <p class="h1">애경은 핵심국가의 선택과 집중으로 글로벌 애경을 만들어갑니다.</p>
+            </div>
+        </div>
+    </div>
+    <!-- 메인영역 -->
+    <main>
+        <!-- Sunstainable -->
+        <section id="sunstainable" class="vh100 flex align-center center">
+            <div class="wrap grid3_4">
+                <h3 class="category">Sustainable<br>Love & Respect</h3>
+                <p>애경산업은 지속가능한 환경을 위해<br>책임을 다하겠습니다.</p>
+                <a class="go" href="">바로가기</a>
+                <ul class="flex">
+                    <li>
+                        <a href="">
+                            <span>Environmental</span>
+                            <p>환경</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <span>Social</span>
+                            <p>사회</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <span>Governance</span>
+                            <p>지배구조</p>
+                        </a>
+                    </li>
+                </ul>
+                <img src="img/forest.png" alt="환경">
+            </div>
+        </section>
+        <!-- beauty -->
+        <section id="beauty" class="flex align-center">
+            <div class="wrap gridc2 padding-tb100 border-top w100">
+                <div class="intro flex column">
+                    <h3 class="category">Beauty</h3>
+                    <p>뷰티</p>
+                    <span class="introP">아름다움의 무한한 가능성을 품은<br>당신을 위한 뷰티풀 모먼트</span>
+                    <a class="block" href="">바로가기</a>
+                </div>
+                <ul class="flex align-center hidden">
+                    <li><a href="">AGE20'S</a></li>
+                    <li><a href="">LUNA</a></li>
+                    <li><a href="">a solution</a></li>
+                    <li><a href="">point&</a></li>
+                </ul>
+            </div>
+        </section>
+        <!-- peasonal Care -->
+        <section id="peasonal" class="flex align-center">
+            <div class="wrap gridc2 padding-tb100 border-top w100">
+                <div class="intro flex column">
+                    <h3 class="category">Peasonal care</h3>
+                    <p>퍼스널 케어</p>
+                    <span class="introP">당신의 일상에 건강하고 향기로운<br>아름다움을 선사합니다.</span>
+                    <a class="block" href="">바로가기</a>
+                </div>
+                <ul class="flex align-center hidden">
+                    <li><a href="">케라시스</a></li>
+                    <li><a href="">블랙포레</a></li>
+                    <li><a href="">바이컬러</a></li>
+                    <li><a href="">알피스트</a></li>
+                    <li><a href="">럽센트</a></li>
+                </ul>
+            </div>
+        </section>
+        <!-- homecare -->
+        <section id="homecare" class="flex align-center">
+            <div class="wrap gridc2 padding-tb100 border-top w100">
+                <div class="intro flex column">
+                    <h3 class="category">Homecare</h3>
+                    <p>홈 케어</p>
+                    <span class="introP">나의 일상 생활을<br>깨끗하게 편리하게 가치있게</span>
+                    <a class="block" href="">바로가기</a>
+                </div>
+                <ul class="flex align-center hidden">
+                    <li><a href="">제트</a></li>
+                    <li><a href="">리큐</a></li>
+                    <li><a href="">허브마리</a></li>
+                    <li><a href="">SWAY</a></li>
+                    <li><a href="">홈백신</a></li>
+                </ul>
+            </div>
+        </section>
+        <!-- news -->
+        <section id="news" class="vh100 flex align-center">
+            <div class="wrap w100">
+                <h3 class="hide">News</h3>
+                <div class="art_cantainer">
+                    <article class="grid2_5">
+                        <h4 class="h4">신제품</h4>
+                        <h5 class="h5">애경산업 케라시스, 닥터루티어 맥주효모 탈모증상완화 샴푸</h5>
+                        <p class="artP">맥주효모 함유해 두피 관리부터 모발 영양 케어까지 한번에 관리</p>
+                        <span class="artS">생활뷰티기업 애경산업의 프리미엄 헤어케어 브랜드 ‘케라시스’(KERASYS)에서 두피 케어로 탈모증상완화는 물론 모발까지 건강하게 관리해 주는 ‘닥터루티어 맥주효모 탈모증상완화 샴푸’를 출시했다.  맥주효모 추출물을 함유해 건강한 두피 관리부터 모발 영양까지 한 번에 관리해 주는 탈모 증상 완화 샴푸다. 닥터루티어 맥주효모 탈모증상완화 샴푸는 ‘맥주효모 추출물’을 함유해 건강한 두피 관리부터 모발 영양 케어까지 한 번에 관리해 주는 탈모증상완화 샴푸이다.</span>
+                    </article>
+                    <article class="grid2_5">
+                        <h4 class="h4">사회공헌</h4>
+                        <h5 class="h5">애경산업, 홍은동 일대 찾아 '사랑의 연탄 나눔' 봉사 진행 </h5>
+                        <p class="artP">홍은동 등 3개 지역 취약계층 위해 연탄 1만1300여장 지원</p>
+                        <span class="artS">사랑(愛)과 존경(敬)의 기업 애경산업은 서울 서대문구 홍은동 일대를 찾아 취약계층의 따뜻한 겨울나기를 돕기 위한 '사랑의 연탄 나눔' 봉사 활동을 펼쳤다. 애경산업은 지역사회와 함께하는 나눔 경영의 일환으로 취약계층의 겨울철 난방비 부담 완화와 생활 안정을 도모하기 위해 사랑의 연탄 나눔 활동을 기획했다.</span>
+                    </article>
+                    <article class="grid2_5">
+                        <h4 class="h4">신제품</h4>
+                        <h5 class="h5">루나 레이어 블렌딩 아이 팔레트 출시</h5>
+                        <p class="artP">5단계의 음영 컬러와 5가지 제형으로 다채로운 아이 메이크업 완성 </p>
+                        <span class="artS">생활뷰티기업 애경산업의 메이크업 전문 브랜드 ‘루나’(LUNA)에서 다양한 색감과 제형으로 다채로운 아이 메이크업을 연출해 주는 ‘레이어 블렌딩 아이 팔레트’(LAYER BLENDING EYE PALETTE)를 출시했다.
+                            루나 레이어 블렌딩 아이 팔레트는 옅은 색상부터 진한 색상까지 5단계의 음영을 표현해 주는 컬러와 프라이머∙포인트 글리터∙쉬머 글리터∙파우더 매트∙소프트 매트 5가지의 활용도가 높은 제형으로 이루어져 다채로운 메이크업을 연출해 주는 아이섀도 팔레트이다.
+                            </span>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- 우측슬라이드아이콘 -->
+    <aside>
+        <ul>
+            <li><a href="" class="currentB eng">intro</a></li>
+            <li><a href="">VIDEO</a></li>
+            <li><a href="">PROMPTION</a></li>
+            <li><a href="">BUSINESS</a></li>
+            <li><a href="">PRODUCT</a></li>
+            <li><a href="">NEWS</a></li>
+        </ul>
+    </aside>
+    <!-- 하단영역 -->
+    <footer>
+        <div class="wrap grid">
+            <h1 class="">AEKYUNG</h1>
+            <address>애경산업(주) 서울시 마포구 양화로 188</address>
+            <span>
+                <a href="">이용약관</a>
+                <a href="">개인정보처리방침</a>
+                <a href="">고객만족팀 080-024-1357</a>
+            </span>
+            <ul>
+                <li><a href="">유튜브</a></li>
+                <li><a href="">페이스북</a></li>
+                <li><a href="">인스타그램</a></li>
+                <li><a href="">네이버</a></li>
+                <li><a href="">AK Lover</a></li>
+            </ul>
+            <p class="p">COPYRIGHT© 2023 Aekyung Industrial Co., Ltd. ALL RIGHT RESERVED</p>
+        </div>
+    </footer>
+</body>
+</html>
