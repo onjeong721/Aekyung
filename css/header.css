@@ -42,8 +42,11 @@ header .wrap ul.menu li a {
 header .wrap .side{
   display: flex;
 }
-header .wrap .side a{
-
+header .wrap .side >a{
+  font-size: 0;
+  background: url(../img/search.png) no-repeat center /contain;
+  width: 24px;
+  height: 24px;
 }
 header .wrap .side span.lang {
   

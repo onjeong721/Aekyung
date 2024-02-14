@@ -5,18 +5,53 @@ body{
   max-width: 100%;
   margin: 0 auto;
 }
+.gridwrap{
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: auto auto auto 1fr;
+  align-items: center;
+  row-gap: 30px;
+  position: relative;
+  justify-items: center;
+}
+.gridwrap::before{
+  content: "";
+  display: block;
+  width: 90%;
+  position: absolute;
+  top: 0;
+  height: 1px;
+  background-color: #eee;
+}
 /* 폰트 */
-.category{
-  font-size: 40px;
+.h3{
+  font-size: 50px;
   font-weight: bold;
+  grid-row: 1;
+  justify-self: left;
 }
-.go{
-  
+.p{
+  font-size: 18px;
+  line-height: 1.6;
+  letter-spacing: -2px;
+  color: #555;
+  justify-self: left;
 }
-.introP{
-  line-height: 1.4;
+.span{
+
+  font-size: 20px;
+  font-weight: bold;
+  justify-self: left;
+}
+.divP{
+  font-weight: bold;
+  letter-spacing: -1px;
 }
 /* 패딩 */
+.padding{
+  padding: 150px 0px 150px 200px;
+}
 .padding50{
   padding: 50px;
 }
@@ -63,31 +98,18 @@ body{
   margin-bottom:20px;
   font-weight: 200;
 }
-.h3{
-  font-size: 18px;
-}
 .h4{
-
+  color: #777;
 }
 .h5{
 
+  font-size: 25px;
+  letter-spacing: -0.8px;
+  font-weight: bold;
+  margin-top: 10px;
 }
 .h6{
   font-size: 20px;
-}
-.p{
-  font-size: 16px;
-  line-height: 1.6;
-}
-.p14{
-  font-size: 14px;
-  line-height: 1.6;
-}
-.artP{
-
-}
-.artS{
-
 }
 /* flex */
 .flex{
@@ -109,16 +131,21 @@ body{
   flex-wrap: wrap;
 }
 
-/* 그리드 */
-.grid24{
-  display: grid;
-  grid-template-columns: 40% 60%;
-  grid-template-rows: auto auto auto auto;
-}
 
 /* 블럭,인라인 */
 .block{
   display: block;
+  padding: 20px 30px;
+  background-color: #f8f8f8;
+  border-radius: 30px;
+  justify-self: left;
+}
+.block::after{
+  display: inline-block;
+  content: "";
+  background: url(../img/3h.png) no-repeat center /cover;
+  width: 40px;
+  height: 10px;
 }
 
 /* 정렬 */
@@ -139,12 +166,12 @@ body{
   margin: 0 10px;
 }
 .border-top{
-  border-top: 1px solid #ccc; width: 80%;
+  /*! border-top: 1px solid #eee; */ 
 }
 
 /* 안보이게 */
 .hide{
-  display: none;
+  display: none !important;
   font-size: 0;
 }
 .hidden{

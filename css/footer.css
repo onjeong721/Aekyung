@@ -7,7 +7,7 @@ footer .wrap {
   grid-template-columns: auto auto 1fr auto;
   grid-template-rows: auto auto auto;
   padding: 0 30px;
-  row-gap: 30px;
+  row-gap: 20px;
   column-gap: 15px;
 }
 footer .wrap h1 {
@@ -18,10 +18,13 @@ footer .wrap h1 {
   width: 195px;
   height: 31px;
   background-repeat: no-repeat;
+  margin-bottom: 50px;
 }
 footer .wrap address {
   grid-row: 4;
   grid-column: 1;
+  letter-spacing: -1px;
+  color: #777;
 }
 footer .wrap span{
   grid-column: 1;
@@ -31,6 +34,9 @@ footer .wrap span{
 }
 footer .wrap span a{
   
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
 }
 footer .wrap ul{
   grid-column: 4;
@@ -50,6 +56,10 @@ footer .wrap ul li a::after{
   width: 20px;
   height: 20px;
   background-size: contain;
+  content: "";
+  display: block;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 footer .wrap ul li:nth-child(2) a::after{
   background-image: url(../img/facebook.png);
@@ -70,4 +80,5 @@ footer .wrap p {
   grid-column: 2;
   grid-row: 4;
   display: block;
+  color: #777;
 }

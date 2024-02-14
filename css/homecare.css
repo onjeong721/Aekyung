@@ -1,38 +1,36 @@
 section#homecare {
   
 }
-section#homecare .intro {
-  gap: 25px;
-}
-section#homecare .intro .intro{
-  gap: 25px;
-}
-section#homecare .intro .intro h3 {
-  
-}
-section#homecare .intro .intro p {
- 
-}
-section#homecare .intro .intro span {
+section#homecare .gridwrap h3.span{
 
 }
-section#homecare .intro .intro a {
-  margin-top: 100px;
+section#homecare .gridwrap span.h3{
+
 }
-section#homecare .wrap ul {
+section#homecare .gridwrap p.p{
+
+}
+section#homecare .gridwrap a.block{
+
+}
+section#homecare .gridwrap ul {
   grid-column: 2;
   grid-row: 1 / span 5;
   gap: 20px;
   width: 100%;
 }
-section#homecare .wrap ul li {
+section#homecare .gridwrap ul .slick-dots li button::before{
+  display: none;
+}
+section#homecare .gridwrap ul li {
   height: 100%;
   width: 100%;
 }
-section#homecare .wrap ul li a {
+
+section#homecare .gridwrap ul li a {
   font-size: 0;
 }
-section#homecare .wrap ul li a::after{
+section#homecare .gridwrap ul li a::after{
   width: 312px;
   height: 397px;
   background-size: cover;
@@ -41,18 +39,18 @@ section#homecare .wrap ul li a::after{
   content: "";
   display: block;
 }
-section#homecare .wrap ul li:nth-child(1) a::after{ 
+section#homecare .gridwrap ul li:nth-child(1) a::after{ 
   background-image: url(../img/home1.png);
 }
-section#homecare .wrap ul li:nth-child(2) a::after{
+section#homecare .gridwrap ul li:nth-child(2) a::after{
   background-image: url(../img/home2.png);
 }
-section#homecare .wrap ul li:nth-child(3) a::after{
+section#homecare .gridwrap ul li:nth-child(3) a::after{
   background-image: url(../img/home3.jpg);
 }
-section#homecare .wrap ul li:nth-child(4) a::after{
+section#homecare .gridwrap ul li:nth-child(4) a::after{
   background-image: url(../img/home4.png);
 }
-section#homecare .wrap ul li:nth-child(5) a::after{
+section#homecare .gridwrap ul li:nth-child(5) a::after{
   background-image: url(../img/home5.jpg);
 }

@@ -18,9 +18,46 @@ section#news .wrap::after{
 section#news .wrap .art_cantainer {
   
 }
+section#news .wrap .slick-prev{
+  
+  left: -50px;
+}
+section#news .wrap .slick-prev::before{
+  color: black;
+  font-size: 0px;
+  background: url(../img/conleft.png) no-repeat center /contain;
+  content: "";
+  display: block;
+  width: 30px;
+  height: 30px;
+}
+section#news .wrap .slick-next{
+  right: -50px;
+}
+section#news .wrap .slick-next::before{
+  color: black;
+  background: url(../img/conright.png) no-repeat center /contain;
+  font-size: 0px;
+  content: "";
+  display: block;
+  width: 30px;
+  height: 30px;
+}
+section#news .wrap .slick-dots{
+  bottom: 10px;
+  left: -300px;
+}
+section#news .wrap .art_cantainer .slick-dots li button::before{
+  font-size: 10px;
+  bottom: 0;
+  color: white;
+  border: 1px solid white;
+  border-radius: 50%;
+  line-height: 24px;
+}
 section#news .wrap .art_cantainer article{
-
   column-gap: 50px;
+  row-gap: 20px;
 }
 section#news .wrap .art_cantainer article img{
   grid-column: 1;
@@ -36,6 +73,7 @@ section#news .wrap .art_cantainer article::after{
   content: "";
   display: block;
   background: url(../img/news1.jpg) no-repeat center /cover;
+  position: relative;
 }
 section#news .wrap .art_cantainer article:nth-child(2)::after{
   background: url(../img/news2.jpg) no-repeat center /cover;
@@ -67,4 +105,6 @@ section#news .wrap .art_cantainer article span {
   text-overflow: ellipsis;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 5;
+  border-top: 1px solid #ccc;
+  padding-top: 50px;
 }

@@ -1,39 +1,38 @@
 section#peasonal {
   
 }
-section#peasonal .wrap {
+section#peasonal .gridwrap {
   width: 100%;
 }
-section#peasonal .wrap .intro{
-  gap: 25px;
-}
-section#peasonal .wrap .intro h3 {
-  
-}
-section#peasonal .wrap .intro p {
- 
-}
-section#peasonal .wrap .intro span {
+section#peasonal .gridwrap h3.span{
 
-  line-height: 1.4;
 }
-section#peasonal .wrap .intro a {
-  margin-top: 100px;
+section#peasonal .gridwrap span.h3{
+
 }
-section#peasonal .wrap ul {
+section#peasonal .gridwrap p.p{
+
+}
+section#peasonal .gridwrap a.block{
+
+}
+section#peasonal .gridwrap ul {
   grid-column: 2;
   grid-row: 1 / span 5;
   gap: 20px;
   width: 100%;
 }
-section#peasonal .wrap ul li {
+section#peasonal .gridwrap ul .slick-dots li button::before{
+  display: none;
+}
+section#peasonal .gridwrap ul li {
   height: 100%;
   width: 100%;
 }
-section#peasonal .wrap ul li a {
+section#peasonal .gridwrap ul li a {
   font-size: 0;
 }
-section#peasonal .wrap ul li a::after{
+section#peasonal .gridwrap ul li a::after{
   width: 312px;
   height: 397px;
   background-size: cover;
@@ -42,18 +41,18 @@ section#peasonal .wrap ul li a::after{
   content: "";
   display: block;
 }
-section#peasonal .wrap ul li:nth-child(1) a::after{ 
+section#peasonal .gridwrap ul li:nth-child(1) a::after{ 
   background-image: url(../img/peasonal1.jpg);
 }
-section#peasonal .wrap ul li:nth-child(2) a::after{
+section#peasonal .gridwrap ul li:nth-child(2) a::after{
   background-image: url(../img/peasonal2.jpg);
 }
-section#peasonal .wrap ul li:nth-child(3) a::after{
+section#peasonal .gridwrap ul li:nth-child(3) a::after{
   background-image: url(../img/peasonal3.jpg);
 }
-section#peasonal .wrap ul li:nth-child(4) a::after{
+section#peasonal .gridwrap ul li:nth-child(4) a::after{
   background-image: url(../img/peasonal4.jpg);
 }
-section#peasonal .wrap ul li:nth-child(5) a::after{
+section#peasonal .gridwrap ul li:nth-child(5) a::after{
   background-image: url(../img/peasonal5.jpg);
 }

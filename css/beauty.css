@@ -1,47 +1,38 @@
 section#beauty {
   
 }
-section#beauty .wrap {
-  width: 100%;
-  position: relative;
-}
-section#beauty .wrap::after{
-  content: "";
-  display: block;
-  border-top: 1px solid #ccc;
-  position: absolute;
-  width: 95%;
-  left: 50px;
-}
-section#beauty .wrap .intro{
-  gap: 25px;
-}
-section#beauty .wrap .intro h3 {
-  
-}
-section#beauty .wrap .intro p {
- 
-}
-section#beauty .wrap .intro span {
+section#beauty .gridwrap {
 
 }
-section#beauty .wrap .intro a {
-  margin-top: 100px;
+section#beauty .gridwrap h3.span{
+
 }
-section#beauty .wrap ul {
+section#beauty .gridwrap span.h3{
+
+}
+section#beauty .gridwrap p.p{
+
+}
+section#beauty .gridwrap a.block{
+
+}
+section#beauty .gridwrap ul {
   grid-column: 2;
-  grid-row: 1 / span 5;
+  grid-row: 1 / span 4;
   gap: 20px;
   width: 100%;
 }
-section#beauty .wrap ul li {
+section#beauty .gridwrap ul .slick-dots li button::before{
+  display: none;
+}
+section#beauty .gridwrap ul li {
   height: 100%;
   width: 100%;
 }
-section#beauty .wrap ul li a {
+section#beauty .gridwrap ul li a {
   font-size: 0;
 }
-section#beauty .wrap ul li a::after{
+section#beauty .gridwrap ul li a::after{
   width: 312px;
   height: 397px;
   background-size: cover;
@@ -50,15 +41,15 @@ section#beauty .wrap ul li a::after{
   content: "";
   display: block;
 }
-section#beauty .wrap ul li:nth-child(1) a::after{ 
+section#beauty .gridwrap ul li:nth-child(1) a::after{ 
   background-image: url(../img/beauty1.jpg);
 }
-section#beauty .wrap ul li:nth-child(2) a::after{
+section#beauty .gridwrap ul li:nth-child(2) a::after{
   background-image: url(../img/beauty2.jpg);
 }
-section#beauty .wrap ul li:nth-child(3) a::after{
+section#beauty .gridwrap ul li:nth-child(3) a::after{
   background-image: url(../img/beauty3.jpg);
 }
-section#beauty .wrap ul li:nth-child(4) a::after{
+section#beauty .gridwrap ul li:nth-child(4) a::after{
   background-image: url(../img/beauty4.jpg);
 }
