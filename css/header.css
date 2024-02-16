@@ -1,62 +1,163 @@
-header {
-  
+body{
+  position: relative;
 }
-header .wrap {
-  
-  width: calc(100% - 50px);
-  height: 70px;
-  display: grid;
-  grid-template-columns: auto 1fr auto;
+header {
+  position: absolute;
+  width: 100%;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  transition: 1s;
+  background-color: transparent;
 }
 header .wrap h1 {
   
+  display: block;
 }
 header .wrap h1 a {
   font-size: 0;
   width: 135px;
   height: 22px;
-  background-image: url(../img/logo.jpg);
   background-size: contain;
   background-repeat: no-repeat;
+  transition: 0.5s;
 }
 header .wrap h1 a::after{
   content: "";
   display: block;
   width: 135px;
   height: 22px;
-  background-image: url(../img/logo.png);
+  background-image: url(../img/logo_w.png);
   background-size: cover;
   background-repeat: no-repeat;
 }
-header .wrap ul.menu {
+header .wrap h1.hover a::after{
+  background-image: url(../img/logo.png);
+}
+header .wrap ul.gnb {
   display: flex;
   justify-content: center;
-  gap: 50px;
+  color: white;
+  font-weight: bold;
+  justify-self: center;
 }
-header .wrap ul.menu li {
+header .wrap ul.gnb li {
   
+  position: relative;
 }
-header .wrap ul.menu li a {
-  
+header .wrap ul.gnb li a {
+  color: white;
+  padding: 0 30px;
+  transition: 0.5s;
 }
-header .wrap .side{
-  display: flex;
+header .wrap ul.gnb.hover li a {
+  color: black;
+  padding: 0 60px;
 }
-header .wrap .side >a{
-  font-size: 0;
-  background: url(../img/search.png) no-repeat center /contain;
-  width: 24px;
-  height: 24px;
+header .wrap ul.gnb li ul.guide{
+
+  position: absolute;
+  top: 70px;
+  left: 0;
+  z-index: 1;
+  display: none;
+  width: 100%;
 }
-header .wrap .side span.lang {
-  
+header .wrap ul.gnb.hover li ul.guide{
+  display: 
+block; 
 }
-header .wrap .side span.lang a {
-  
-}
-header .wrap .side select{
+header .wrap ul.gnb li ul.guide li{
 
 }
-header .wrap .side select option{
+header .wrap ul.gnb li ul.guide li a{
+
+  padding-right: 0;
+  line-height: 2;
+  transition: 0.5s;
+  width: 100%;
+}
+header .wrap .sublist{
+  position: absolute;
+  top: 70px;
+  left: 0;
+  width: 100%;
+  background-color: white;
+  justify-content: center;
+  transition: 0.5s;
+  height: 250px;
+  display: none;
+}
+header .wrap .sublist.hover{
+  display: block;
+}
+/* header .wrap .sublist.hover{
+  display: grid;
+  grid-template-columns: calc((100% - 1145px) / 2) 184px 168px 168px 216px 184px 200px 1fr calc((100% - 1145px) / 2);
+} */
+header .wrap .sublist .menu{
+
+}
+.menu1{
+  grid-column: 2;
+}
+header .wrap .sublist .menu h2.hide{
+
+}
+header .wrap .sublist .menu ul.guide{
+
+}
+header .wrap .sublist .menu ul.guide li{
+
+}
+header .wrap .sublist .menu ul.guide li a{
+
+  line-height: 2;
+}
+header .wrap {
+  display: grid;
+  align-items: center;
+  grid-template-columns: auto 1fr auto auto auto;
+  column-gap: 10px;
+  width: calc(100% - 50px);
+  height: 70px;
+}
+header .wrap  a.search{
+  font-size: 0;
+  background: url(../img/search_w.png) no-repeat center /contain;
+  width: 24px;
+  height: 24px;
+  padding: 0 10px;
+}
+header .wrap  a.hover.search{
+  background: url(../img/search.png) no-repeat center /contain;
+}
+header .wrap  span.lang {
+  width: 80px;
+}
+header .wrap  span.lang a {
+  color: white;
+  padding: 10px 20px;
+  border: 1px solid white;
+  border-radius: 30px;
+}
+header .wrap  span.lang.hover a {
+  color: black;
+  border: 1px solid black;
+}
+header .wrap  span.lang a:not(:first-child){
+  display: none;
+}
+header .wrap  select{
+  border-radius: 30px;
+  background: linear-gradient(to right, #edcdcd, #fff);
+  padding: 10px 15px;
+  border: none;
+  width: 130px;
+}
+header .wrap  select option{
   
+}
+.menu{
+  display: none;
 }
